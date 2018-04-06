@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+<meta charset="UTF-8">
+<title>Exercício 8</title>
+</head>
+
+<!-- Faça um programa em JavaScript que solicita para um funcionário sua matrícula, nome, 
+número de horas trabalhadas no mês e o valor hora e apresenta o salário bruto a ser recebido no mês. -->
+<body> 
+
+<h2> Exercício 8 </h2>
+<p id="demo"></p>
+
+<script> 
+var nome = prompt("Digite seu nome: ");
+var matricula = prompt("Digite seu nº de matrícula: ");
+var numeroHoras = prompt("Digite seu número de horas trabalhadas: ");
+var valorHoras = prompt("Digite o valor de sua hora/trabalhada: ");
+document.getElementById("demo").innerHTML = "• Nome: " +nome+ "<br>" + "• Matrícula: " +matricula+ "<br>" + "• Nº horas trabalhadas: " +numeroHoras+ "<br>" + "• O valor das horas trabalhadas é de: " +valorHoras+ "";
+document.write("O salário bruto mensal é de: ", numeroHoras * valorHoras);
+
+</script>
+</body>

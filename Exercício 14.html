@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+<meta charset="UTF-8">
+<title>Exercício 14</title>
+</head>
+
+<!-- Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês,  mais uma comissão sobre o montante total vendido. 
+A comissão sobre o total é de 5%. Escrever um programa que leia o salário fixo e o montante vendido por mês. Calcule e escreva o salário final do  vendedor.  -->
+<body> 
+
+<h2> Exercício 14 </h2>
+<p id="demo"></p>
+
+<script> 
+var salarioFixo = Number(prompt("Digite o seu salário fixo: "));
+Math.trunc(salarioFixo);
+var montante = Number(prompt("Digite o valor total em reais dos carros vendidos no mês: "));
+var comissao = (montante * 1.05);
+var salarioFinal = salarioFixo + comissao;
+document.write("O salário final do vendedor, com todas as comissões é de:", salarioFinal);
+
+</script>
+</body>

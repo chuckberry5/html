@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+<meta charset="UTF-8">
+<title>Exercício 10</title>
+</head>
+
+<!-- Escreva um programa para ler o salário mensal atual de um funcionário e o percentual de reajuste. 
+ Calcular e escrever o valor do novo salário.  -->
+<body> 
+
+<h2> Exercício 10 </h2>
+<p id="demo"></p>
+
+<script> 
+var salario = prompt("Digite seu salário mensal: ");
+var reajuste = prompt("Qual foi seu percentual de reajuste: ");
+var x = 100;
+var y= 10000;
+document.write("O valor de seu salário com o reajuste é de: ", (((reajuste * x )/ y)+1) * salario );
+
+</script>
+</body>

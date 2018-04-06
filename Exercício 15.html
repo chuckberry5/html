@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html> 
+    <head>	
+		<meta charset="utf-8"/>
+        <title> Exercicio 15</title>
+    </head>
+   <body>
+		<h1>Exercicio 15</h1>
+        
+		<script>
+		
+		
+			var horas = 3600;
+			var tempo = Number(prompt("Digite um numero  em segundos: "));
+			var horass =  Math.floor(tempo / horas);
+			var minutos =  Math.floor((tempo - (horass * 3600)) / 60); // Math.floor retorna o menor número inteiro 
+			var segundos =  Math.floor(tempo - (horass * 3600) - (minutos * 60));
+			document.write (" A conversao exata é: " +horass+ "h:" +minutos+ "min:"+segundos+"s");
+			
+		</script>
+		
+   </body>
+</html>

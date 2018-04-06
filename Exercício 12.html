@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+<meta charset="UTF-8">
+<title>Exercício 12</title>
+</head>
+
+<!-- A condição física de uma pessoa pode ser medida com base no cálculo do IMC, Índice de Massa Corporal, o qual é 
+calculado dividindo-se a massa da pessoa (m em kg) pela altura da mesma (h em m) elevada ao quadrado (IMC= m/h²). 
+Escreva um programa que leia a massa e a altura de uma pessoa, calcule e mostre o IMC. -->
+<body> 
+
+<h2> Exercício 12 </h2>
+<p id="demo"></p>
+
+<script> 
+var massa = prompt("Qual é sua massa corporal (KG):  ");
+var altura = prompt("Qual sua altura (CM): " );
+var h = altura / 100 // CM para M
+var imc = massa / (h * h);
+document.write(" O seu IMC é de: ", imc);
+
+
+
+</script>
+</body>

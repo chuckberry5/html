@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+<meta charset="UTF-8">
+<title>Exercício 13</title>
+</head>
+
+<!-- Escreva um programa que solicite para o usuário um número e armazene este em uma variável chamada primeiroValor
+ em seguida o usuário deve digitar outro número que será armazenado em uma variável denominada segundoValor.  
+ A seguir (utilizando apenas atribuições entre variáveis) troque os seus conteúdos fazendo com que o  valor que
+ está na primeira variável passe para segunda e vice-versa. Ao final, escrever os valores que ficaram armazenados  
+nas variáveis -->
+<body> 
+
+<h2> Exercício 13 </h2>
+<p id="demo"></p>
+
+<script> 
+var primeiroValor = prompt("Digite um número: ");
+var segundoValor = prompt("Digite outro número: ");
+var aux = primeiroValor;
+function inversao(){
+aux = primeiroValor;
+primeiroValor = segundoValor;
+segundoValor = aux;
+}
+alert("Os valores foram invertidos: ", primeiroValor, segundoValor);
+
+
+
+</script>
+</body>
+
+<!-- var meu_select = $('#meu_select');
+meu_select.change(function() {
+    var valor = meu_select.val()
+    location.href = '#?param=' + valor; -->
